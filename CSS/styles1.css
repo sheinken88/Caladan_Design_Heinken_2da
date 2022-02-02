@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "roboto";
+}
+
+:root{
+    --primary-color: #14279B;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px auto 300px;
+    width: 100%;
+    height: 140vh;
+}
+
+#mobile-cta {
+    display: none;
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    position: sticky;
+    top: 0;
+} 
+
+.logo {
+    color: black;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+ul {
+    display: flex; 
+}
+
+ul li a {
+    color: black;
+    margin: 0 2rem;
+    padding: 2px 15px;
+}
+
+ul li a:hover {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    transition: all .2s ease 0s;
+}
+
+.contactme {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.contactme:hover {
+    font-weight: bold;
+    background-color: #3D56B2;
+}
+
+.hero {
+    background-color: #5C7AEA;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.hero .left-col {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+    font-family: "lato";
+}
+
+h1 {
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
+}
+
+.hero .left-col a {
+    background-color: #3D56B2;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: white;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    display: block;    
+    text-align: center;
+
+
+}
+
+.hero .left-col a:hover{
+    font-weight: bold;
+}
+
+
+
+.hero .right-col {
+    padding: 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-col img {
+    width: 100%
+    
+    /* no consigo ajustar el tamaño de la imagen */
+}
+
+footer {
+    background-color: #14279B;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left-col {
+    font-family: "lato";
+    color: white;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+footer .left-col img {
+    width: 30px;
+    
+}
+
+footer .right-col {
+    font-family: "roboto";
+    color: white;
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 20px;
+}
+
+footer .right-col .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT */
+
+.about {
+    background-color: #E6E6E6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.about .left-col {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-items: flex-start;
+    row-gap: 40px;
+}
+
+.about .left-col h2 {
+    margin-top: 100px;
+    font-family: "lato";
+    color: #3E3E3E;
+    font-size: 3em;
+}
+
+.about .left-col h3 {
+    font-family: "lato";
+    color: #3E3E3E;
+    font-size: 1.5em;
+    max-width: 400px;
+
+}
+
+.about .left-col p {
+    font-family: "lato";
+    color: #3E3E3E;
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.about .right-col {
+    padding: 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .right-col img {
+    width: 100%;
+    max-height: 500px;
+}
+

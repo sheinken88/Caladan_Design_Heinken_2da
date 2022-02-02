@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --primary-color: #14279B;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  Header */ 
+
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    margin-left: 50px;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(to right, #5C7AEA, #14279B);
+    transition:all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: black;
+    display: inline-block;
+    margin: 0px 20px
+}
+
+.logo {
+    
+    color: black;
+    font-size: 1.2em;
+}
+
+.logo span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.contactButton {
+    color: white;
+    font-weight: bold;
+    padding: 5px 30px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+/* el bgc del hover no cubre el 100% del boton */
+.contactButton :hover {
+    background-color: #3D56B2;
+}
+
+
+/* Main */
+
+/* Hero */
+
+.hero {
+    background-color: #5C7AEA;
+    height: 615px;
+}
+
+.left-col {
+    font-family: 'Lato', sans-serif;
+
+}
+
+h1 {
+
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 15%;
+
+}
+
+.learnButton {
+    display: block;
+    color: white;
+    width: 160px;
+    padding: 6px 30px;
+    background-color: #3D56B2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 120px;
+    margin-left: 220px;
+}
+
+.learnButton :hover {
+    background-color: black;
+}
+
+
+.right-col img {
+    display: block;
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.learn-more {
+    color: white;
+
+}
+
+/* About */
+
+.about {
+    background-color: #E6E6E6;
+}
+
+/* Services */
+
+.services {
+    background-color: #3D56B2;
+}
+
+/* Blog */
+
+.blog {
+    background-color: white;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #E6E6E6;
+}
+
+/* Footer */
+
+footer {
+    background-color: #14279B;
+    height: 350px;
+}
+
+footer .left-col{
+    color: white;
+    width: 50%;
+    margin-left: 30px;
+    
+}
+
+footer .left-col h2 {
+    margin-top: 5%;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer .left-col h3 {
+    width: 300px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+footer .left-col p {
+    width: 300px;
+}
+
+footer .left-col .socialMedia {
+    display: block;
+    width: 300px;
+    margin-top: 40px;
+    
+}
+footer .left-col .socialMedia img {
+    width: 30px;
+    margin: 0px 5px;
+
+}
+
+footer .right-col {
+    width: 50%;
+}
+
+footer .right-col .container {
+    align-content: center;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    width: 300px;
+}
+
+footer .right-col .container h4 {
+    font-weight: bold;
+}
+
+footer .right-col .container h5 {
+    font-weight: regular;
+}
+
+/* Detailed Styles */
+
+
+
+
