@@ -95,7 +95,7 @@ body header .contactme {
 }
 
 body header .contactme:hover {
-  font-weight: bold;
+  font-weight: bolder;
   background-color: #3D56B2;
 }
 
