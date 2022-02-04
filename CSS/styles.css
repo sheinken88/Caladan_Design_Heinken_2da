@@ -486,6 +486,7 @@ body .contact #submit {
   #mobile-cta img {
     width: 30px;
   }
+  /* Hero */
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -495,6 +496,63 @@ body .contact #submit {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  /* About */
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .about .left-col .right-col {
+    max-width: 500px;
+  }
+  .about h2, .about h3, .about p {
+    width: 400px;
+  }
+  /* Services */
+  .services {
+    text-align: center;
+  }
+  .services p {
+    display: none;
+  }
+  .services .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+  .services .container .service-card {
+    margin: 0px;
+    border-radius: 0;
+  }
+  /* Blog */
+  .blog .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* Contact */
+  .contact .container {
+    width: 100%;
+  }
+  .contact input, .contact textarea {
+    width: 100%;
+  }
+  /* Footer */
   footer {
     font-size: 00.8em;
   }

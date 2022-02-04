@@ -420,13 +420,83 @@ header {
     } 
 }
 
+/* Hero */
+
 .hero {
     display: flex;
     flex-direction: column-reverse;
 }
 
+/* About */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .left-col .right-col {
+        max-width: 500px;
+    }
+
+    h2, h3, p {
+        width: 400px;
+    }
+}
+
+/* Services */
+
+.services {
+
+    text-align: center;
+    
+    p {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column; 
+        
+        .service-card {
+            margin: 0px;
+            border-radius: 0;
+        }
+    }
+}
+
+/* Blog */
+
+.blog {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+/* Contact */
+
+.contact {
+    .container {
+        width: 100%;
+    }
+    input, textarea {
+        width: 100%;
+        
+    }
+}
+
+/* Footer */
+
 footer {
     font-size: 00.8em;
+    
 
     .left-col {
         row-gap: 10px;
